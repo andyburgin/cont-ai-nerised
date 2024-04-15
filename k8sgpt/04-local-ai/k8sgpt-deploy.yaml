@@ -1,0 +1,17 @@
+apiVersion: core.k8sgpt.ai/v1alpha1
+kind: K8sGPT
+metadata:
+  name: k8sgpt-local
+  namespace: local-ai
+spec:
+  ai:
+    enabled: true
+    model: stable-code-3b-q4_k_m.gguf 
+    backend: localai  
+    baseUrl: http://local-ai.local-ai.svc.cluster.local:80/v1
+  
+  nodeSelector:
+    kubernetes.io/hostname: "kind-worker2"
+  
+  noCache: false
+  version: v0.3.8
