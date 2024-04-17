@@ -11,7 +11,7 @@ apt-get install vim
 ```
 ## Install python libraries
 ```
-pip install langchain-community langchain[llm] llama-cpp-python sentence-transformerschromadb
+pip install langchain-community langchain[llm] llama-cpp-python sentence-transformers chromadb
 ```
 
 # Run the demos
